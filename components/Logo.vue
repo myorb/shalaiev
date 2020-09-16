@@ -1,12 +1,12 @@
 <template>
-  <a alt="logo" href="/">
+  <nuxt-link to="/">
     <div
       class="logo relative inline-block uppercase text-white font-extrabold leading-none inline-block"
     >
       <strong class="block">{{ firstName }}</strong>
       <small class="block leading-normal">{{ lastName }}</small>
     </div>
-  </a>
+  </nuxt-link>
 </template>
 
 <script>

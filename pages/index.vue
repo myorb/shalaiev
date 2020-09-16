@@ -34,7 +34,6 @@
         </div>
         <div class="text-center text-white bg-blue px-4 py-4 m-2">
           JSON
-          {{ enva }}
         </div>
       </div>
     </div>
@@ -43,15 +42,14 @@
 
 <script>
 import { firstName, lastName, position, aboutMe } from '@/docs/profile.json'
-const enva = process.env.baseUrl
+
 export default {
   data () {
     return {
       firstName,
       lastName,
       position,
-      aboutMe,
-      enva
+      aboutMe
     }
   }
 }
@@ -62,6 +60,6 @@ export default {
   transform: translate(-25px, -50%);
 }
 #photo {
-  background-image: url('/photo.jpg');
+  background-image: url("~assets/photo.jpg");
 }
 </style>
