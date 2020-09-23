@@ -90,7 +90,7 @@
 <script>
 import GoogleMaps from '@/components/GoogleMaps'
 
-import { phone, email } from '@/docs/profile.json'
+import { phone, email } from '@/config/profile.json'
 
 export default {
   components: {

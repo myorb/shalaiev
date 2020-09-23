@@ -23,7 +23,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: process.env.NODE_ENV === 'production' ? '/shalaiev/favicon/favicon.ico' : '/favicon/favicon.ico' }
-    ]
+    ],
+    bodyAttrs: {
+      class: 'bg-blue antialiased'
+    }
   },
   /*
   ** Global CSS

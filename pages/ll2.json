@@ -1,0 +1,17 @@
+[ 
+    { 
+        "title": "Senior Full Stack Developer",
+         "company": "InstaMotion Retail GmbH",
+         "date-start": "Feb 2019",
+         "date-end": "Present",
+         "location": "Munich Area, Germany",
+         "description": "InstaMotion Retail's goal is to lift the car buying process online. As a core developer, I'm involved in all company processes to bring the expert vision and develop the best solution on the market. I worked on: - Relocation from Heroku to AWS with Docker/Terraform/Jenkins/Tests/Ci-Cd/Git; - Developed PHP/JS/GO service templates(Starter Kits) as company standards; - Start ReactJS frontend app with Styled Components, GraphQL, and self-developed UI library; - Build backend... InstaMotion Retail's goal is to lift the car buying process online. As a core developer, I'm involved in all company processes to bring the expert vision and develop the best solution on the market. I worked on: - Relocation from Heroku to AWS with Docker/Terraform/Jenkins/Tests/Ci-Cd/Git; - Developed PHP/JS/GO service templates(Starter Kits) as company standards; - Start ReactJS frontend app with Styled Components, GraphQL, and self-developed UI library; - Build backend REST API (NodeJs/ExpressJS/TypeScript/RAML) for banks integration; - Start from scratch GOLANG and VueJS app for an emailing system for internal usage; - Build PHP/JS(LARAVEL/VueJS) logistic/tracking system for internal usage; - Build smart microservice images processing application with Serverless, NodeJs, TypeScript, Artificial intelligence, and AWS Recognition; TechStack: Laravel, Symfony, PHP, Shell, GoLnag, Linux, Nginx, MySQL, MongoDB, PostgreSQL, DynamoDB, JavaScript, TypeScript, NodeJs, ExpressJs, ReactJs, VueJs, Vuex, NextJs, NuxtJs, Koa, Apolo, GraphQL, REST API, Docker, Kubernetes, CI/CD, Jenkins, AWS, MVC, SOLID, Jira, Canvas, Scrum, Agile " 
+    }, 
+    { 
+        "title": "CTO & Co-Founder",
+        "company": "AGROXY.com",
+        "date-start": "Feb 2017",
+        "date-end": "Present",
+        "description": "Started the agro-trading system (agroxy.com/agroxy.africa) based on modern technologies includes best practices for using humans and technologies. As one of the first founders, I'm trying to build a trusted and open community of our customers and developers. I'm helping to evolve agile development, issue tracking, incident management, and scale infrastructure. I'm working in close tandem with a team, co-founders, and Investors to provide our ideas in life." 
+    } 
+]

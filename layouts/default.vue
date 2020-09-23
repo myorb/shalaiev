@@ -1,29 +1,16 @@
 <template>
-  <div class="flex">
-    <sidebar />
-    <div class="p-10 flex-1 bg-white pb-12 relative">
-      <div
-        :class="{ 'w-185px': expandSidebar }"
-        class="w-0 absolute top-0 left-0 h-full bg-blue transition-width-250"
-      />
-      <div class="relative">
-        <app-menu />
-        <main>
-          <Nuxt />
-        </main>
-      </div>
-    </div>
+  <div class="bg-gray-300">
+    <top-nav />
+    <Nuxt />
   </div>
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar'
-import AppMenu from '@/components/Menu'
+import TopNav from '@/components/Nav'
 
 export default {
   components: {
-    Sidebar,
-    AppMenu
+    TopNav
   },
 
   computed: {

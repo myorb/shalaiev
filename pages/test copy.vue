@@ -1,18 +1,18 @@
 <template>
   <article>
+    <h1>{{ page.title }}</h1>
     <nuxt-content
       class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
       :document="page"
     />
-    <br>
   </article>
 </template>
 
 <script>
 export default {
   async asyncData ({ $content }) {
-    const page = await $content('hello').fetch()
-    console.log(page.body)
+    const page = await $content('home').fetch()
+
     return {
       page
     }

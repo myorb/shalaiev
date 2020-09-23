@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { lastName, firstName } from '@/docs/profile.json'
+import { lastName, firstName } from '@/config/profile.json'
 
 export default {
   data () {
@@ -24,11 +24,11 @@ export default {
 
 <style lang="scss" scoped>
 strong {
-  font-size: 22px;
+  font-size: 12px;
 }
 
 small {
-  font-size: 28px;
+  font-size: 16px;
 }
 
 .logo {

@@ -80,8 +80,8 @@
 
 <script>
 import Logo from '@/components/Logo'
-import { phone, email } from '@/docs/profile.json'
-import { facebook, linkedin, github, stackoverflow } from '@/docs/social.json'
+import { phone, email } from '@/config/profile.json'
+import { facebook, linkedin, github, stackoverflow } from '@/config/social.json'
 
 export default {
   components: {
