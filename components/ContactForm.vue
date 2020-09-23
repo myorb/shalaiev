@@ -25,9 +25,9 @@
     </div>
     <div class="text-center">
       <p class="mb-2" data-config-id="contact">
-        Or just email us on
+        Or just email me
       </p>
-      <a class="text-blue-700 hover:underline" href="#" data-config-id="email">scranton@dundermifflin.com</a>
+      <a class="text-blue-700 hover:underline" href="#" data-config-id="email">itdep24@gmail.com</a>
     </div>
   </section>
 </template>
