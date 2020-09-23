@@ -18,6 +18,9 @@
           <span class="text-blue">Engeneer</span>
         </div>
       </h1>
+      <div class="pl-8 pt-16 text-gray-600">
+        <SocialIcons />
+      </div>
       <div class="pl-8 pt-16">
         <p class="text-gray:900">
           {{ position }}
@@ -47,23 +50,19 @@
           </div>
         </div>
       </div>
-
-      <div class="flex">
-        <ContactForm />
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 import { firstName, lastName, position, aboutMe } from '@/config/profile.json'
-import ContactForm from '@/components/ContactForm'
+import SocialIcons from '@/components/SocialIcons'
 import cvData from '@/config/cv.json'
 import JsPDF from 'jspdf'
 
 export default {
   components: {
-    ContactForm
+    SocialIcons
   },
   data () {
     return {

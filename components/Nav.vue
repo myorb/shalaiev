@@ -16,18 +16,18 @@
       </div>
 
       <div class="md:flex items-center" :class="isOpen ? 'block' : 'hidden'">
-        <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
-          <nuxt-link class="my-1 text-sm text-gray-200 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0" to="/">
+        <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1 text-lg">
+          <nuxt-link class="my-1 text-gray-200 leading-5 hover:text-gray-200 hover:underline md:mx-4 md:my-0" to="/">
             Home
           </nuxt-link>
-          <nuxt-link class="my-1 text-sm text-gray-200 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0" to="/contact">
+          <nuxt-link class="my-1 text-gray-200 leading-5 hover:text-gray-200 hover:underline md:mx-4 md:my-0" to="/test">
+            Profile
+          </nuxt-link>
+          <nuxt-link class="my-1 text-gray-200 leading-5 hover:text-gray-200 hover:underline md:mx-4 md:my-0" to="/card">
+            Blog
+          </nuxt-link>
+          <nuxt-link class="my-1 text-gray-200 leading-5 hover:text-gray-200 hover:underline md:mx-4 md:my-0" to="/contact">
             Contact
-          </nuxt-link>
-          <nuxt-link class="my-1 text-sm text-gray-200 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0" to="/card">
-            Card
-          </nuxt-link>
-          <nuxt-link class="my-1 text-sm text-gray-200 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0" to="/test">
-            Test
           </nuxt-link>
         </div>
       </div>
@@ -58,6 +58,6 @@ export default {
 <style scoped>
 .nuxt-link-exact-active {
   font-weight: 800;
-  color:black;
+  color:gray-200 ;
 }
 </style>

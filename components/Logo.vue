@@ -1,7 +1,7 @@
 <template>
   <nuxt-link to="/">
     <div
-      class="logo relative inline-block uppercase text-white font-extrabold leading-none inline-block"
+      class="logo px-2 relative inline-block uppercase text-white font-extrabold leading-none inline-block"
     >
       <strong class="block">{{ firstName }}</strong>
       <small class="block leading-normal">{{ lastName }}</small>
@@ -35,9 +35,9 @@ small {
   &::before,
   &::after {
     position: absolute;
-    top: 50%;
+    top: 36%;
     font-weight: 600;
-    opacity: 0;
+    opacity: 0.3;
     transition: opacity 0.25s, transform 0.25s;
     transform: translateY(-50%);
 
@@ -59,7 +59,7 @@ small {
   &:focus {
     &:before,
     &:after {
-      opacity: 0.3;
+      opacity: 0.9;
     }
 
     &:before {
