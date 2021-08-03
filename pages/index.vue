@@ -1,5 +1,7 @@
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+  >
     <div class="w-full h-64 lg:h-screen">
       <div
         id="photo"
@@ -36,30 +38,27 @@
           {{ skills }}... and much more!
         </p>
         <br>
-        <div class="flex">
-          <h3>Download curriculum vitae</h3>
-        </div>
-        <div class="flex flex-wrap">
-          <div class="m-4">
-            <a class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded" href="/files/cv_shalaiev.pdf" target="_blank">
-              PDF
-            </a>
-          </div>
-        </div>
       </div>
+      <Download />
     </div>
   </div>
 </template>
 
 <script>
-import { firstName, lastName, position, aboutMe, skills } from '@/config/profile.json'
+import {
+  firstName,
+  lastName,
+  position,
+  aboutMe,
+  skills
+} from '@/config/profile.json'
 import SocialIcons from '@/components/SocialIcons'
-import cvData from '@/config/cv.json'
-// import JsPDF from 'jspdf'
+import Download from '@/components/Download'
 
 export default {
   components: {
-    SocialIcons
+    SocialIcons,
+    Download
   },
   data () {
     return {
@@ -71,25 +70,6 @@ export default {
     }
   },
   methods: {
-    downloadPdf () {
-      // const url = '/files/cv_shalaiev.pdf'
-      // window.location.href = url
-
-      // const doc = new JsPDF('p', 'mm', 'a4')
-      // doc.text('Hello World', 10, 10)
-      // doc.save('OlexanderShalaiev' + new Date().toISOString().slice(0, 10) + '.pdf')
-    },
-    downloadJson () {
-      const data = JSON.stringify(cvData)
-      const blob = new Blob([data], { type: 'text/plain' })
-      const e = document.createEvent('MouseEvents')
-      const a = document.createElement('a')
-      a.download = 'test.json'
-      a.href = window.URL.createObjectURL(blob)
-      a.dataset.downloadurl = ['text/json', a.download, a.href].join(':')
-      e.initEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
-      a.dispatchEvent(e)
-    }
   }
 }
 </script>

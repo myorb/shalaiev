@@ -1,0 +1,42 @@
+<template>
+  <div
+    class="
+  order-2
+  w-full
+  text-center
+  grid
+  grid-cols-1
+  gap-3
+  sm:flex
+  sm:gap-0
+  sm:space-x-6
+  mb-3
+  px-5
+  md:px-8"
+  >
+    <a
+      href="/files/cv_shalaiev.pdf"
+      target="_blank"
+      class="
+          text-sm
+          font-semibold
+          bg-indigo-500
+          text-white
+          py-3
+          px-4
+          rounded-lg
+          hover:bg-indigo-700
+          focus:outline-none
+          focus-visible:ring-2
+          focus-visible:ring-indigo-700
+          focus-visible:ring-offset-2
+          focus-visible:ring-offset-indigo-900
+          group
+          flex"
+    >
+      <span>
+        Download curriculum vitae
+      </span>
+    </a>
+  </div>
+</template>

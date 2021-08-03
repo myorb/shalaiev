@@ -21,10 +21,10 @@ module.exports = {
           900: '#2a4365'
         },
 
-        white: {
-          default: '#fff',
-          20: 'rgba(255, 255, 255, .2)'
-        },
+        // white: {
+        //   default: '#fff',
+        //   20: 'rgba(255, 255, 255, .2)'
+        // },
 
         black: {
           default: '#2b303a',
@@ -82,11 +82,11 @@ module.exports = {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',
     content: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js',
-      'nuxt.config.js'
+      './components/**/*.{vue,js}',
+      './layouts/**/*.vue',
+      './pages/**/*.vue',
+      './plugins/**/*.{js,ts}',
+      './nuxt.config.{js,ts}'
     ]
   },
   future: {
