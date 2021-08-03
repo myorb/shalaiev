@@ -29,24 +29,21 @@
           {{ aboutMe }}
         </p>
         <br>
+        <p>
+          <b>Skills</b>
+        </p>
+        <p class="text-gray">
+          {{ skills }}... and much more!
+        </p>
+        <br>
         <div class="flex">
           <h3>Download curriculum vitae</h3>
         </div>
         <div class="flex flex-wrap">
           <div class="m-4">
-            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded" @click="downloadPdf">
+            <a class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded" href="/files/cv_shalaiev.pdf" target="_blank">
               PDF
-            </button>
-          </div>
-          <div class="m-4">
-            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
-              DOC
-            </button>
-          </div>
-          <div class="m-4">
-            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded" @click="downloadJson">
-              JSON
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -55,10 +52,10 @@
 </template>
 
 <script>
-import { firstName, lastName, position, aboutMe } from '@/config/profile.json'
+import { firstName, lastName, position, aboutMe, skills } from '@/config/profile.json'
 import SocialIcons from '@/components/SocialIcons'
 import cvData from '@/config/cv.json'
-import JsPDF from 'jspdf'
+// import JsPDF from 'jspdf'
 
 export default {
   components: {
@@ -69,14 +66,18 @@ export default {
       firstName,
       lastName,
       position,
-      aboutMe
+      aboutMe,
+      skills
     }
   },
   methods: {
     downloadPdf () {
-      const doc = new JsPDF('p', 'mm', 'a4')
-      doc.text('Hello World', 10, 10)
-      doc.save('OlexanderShalaiev' + new Date().toISOString().slice(0, 10) + '.pdf')
+      // const url = '/files/cv_shalaiev.pdf'
+      // window.location.href = url
+
+      // const doc = new JsPDF('p', 'mm', 'a4')
+      // doc.text('Hello World', 10, 10)
+      // doc.save('OlexanderShalaiev' + new Date().toISOString().slice(0, 10) + '.pdf')
     },
     downloadJson () {
       const data = JSON.stringify(cvData)
