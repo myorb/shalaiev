@@ -15,7 +15,7 @@
   md:px-8"
   >
     <a
-      href="/files/cv_shalaiev.pdf"
+      href="files/cv_shalaiev.pdf"
       target="_blank"
       class="
           text-sm
