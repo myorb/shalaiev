@@ -20,9 +20,6 @@
           <nuxt-link class="my-1 text-gray-200 leading-5 hover:text-gray-200 hover:underline md:mx-4 md:my-0" to="/">
             Home
           </nuxt-link>
-          <nuxt-link class="my-1 text-gray-200 leading-5 hover:text-gray-200 hover:underline md:mx-4 md:my-0" to="/test">
-            Profile
-          </nuxt-link>
           <nuxt-link class="my-1 text-gray-200 leading-5 hover:text-gray-200 hover:underline md:mx-4 md:my-0" to="/contact">
             Contact
           </nuxt-link>
